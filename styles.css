@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?familFGochi+Hand');
+body {
+  background-color: #a39bd2;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #494a4b;
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  font-size: 139%;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    min-height: 100vh;
+  }
+}
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 250px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0, 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.heading_title {
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: rgba(0, 255, 196, 0.7);
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .heading_title {
+    font-size: 2rem;
+  }
+}
+.heading_img {
+  width: 24%;
+}
+.form_label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form_input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0.7rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 3px 15px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #ea95e0;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1rem;
+  color: rgba(63, 62, 65, 0.7);
+  width: 70%;
+  margin-bottom: 20px;
+}
+.form_input:focus {
+  outline: none;
+  border: solid 3px #ea95e0;
+}
+
+@media only screen and (min-width: 500px) {
+  .form_input {
+    width: 60%;
+  }
+}
+.button {
+  padding: 0;
+  border: none;
+  transform: rotate(4deg);
+  cursor: pointer;
+  transform-origin: center;
+  font-family: 'Gochi Hand', cursive;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-image: url('your_image_url_here');
+  background-color: rgba(0, 255, 196, 0.7);
+}
+
+.button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #494a4b;
+}
+
+.button:active,
+.button:focus {
+  transform: translateY(4px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+.toDoList {
+  text-align: left;
+}
+.toDoList li {
+  position: relative;
+  padding: 0.5rem;
+}
+.toDoList li:hover {
+  text-decoration: line-through wavy #24bffb;
+}
