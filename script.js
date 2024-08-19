@@ -3,12 +3,12 @@
   // state variables
   let toDoListArray = [];
   // variables
-  const form = document.querySelector('.form');
-  const input = document.querySelector('.form_input');
-  const ul = document.querySelector('.toDoList');
+  const form = document.querySelector(".form");
+  const input = document.querySelector(".form_input");
+  const ul = document.querySelector(".toDoList");
 
   // event listeners
-  form.addEventListener('submit', (e) => {
+  form.addEventListener("submit", (e) => {
     // prevent default behavior - Page reload
     e.preventDefault();
     // give item a unique ID
@@ -19,11 +19,11 @@
     addItemToDOM(itemId, toDoItem);
     addItemToArray(itemId, toDoItem);
     // clear the input box. (this is default behavior but we got rid of that)
-    input.value = '';
+    input.value = "";
   });
 
-  ul.addEventListener('click', (e) => {
-    let id = e.target.getAttribute('data-id');
+  ul.addEventListener("click", (e) => {
+    let id = e.target.getAttribute("data-id");
     if (!id) return; // user clicked in something else
     // pass id through to functions
     removeItemFromDOM(id);
@@ -32,8 +32,8 @@
 
   function addItemToDOM(itemId, toDoItem) {
     // create an li
-    const li = document.createElement('li');
-    li.setAttribute('data-id', itemId);
+    const li = document.createElement("li");
+    li.setAttribute("data-id", itemId);
     // add toDoItem text to li
     li.innerText = toDoItem;
     // add li to the DOM

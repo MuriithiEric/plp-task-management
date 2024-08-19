@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?familFGochi+Hand');
+@import url("https://fonts.googleapis.com/css?familFGochi+Hand");
 body {
   background-color: #a39bd2;
   min-height: 70vh;
@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #494a4b;
-  font-family: 'Gochi Hand', cursive;
+  font-family: "Gochi Hand", cursive;
   text-align: center;
   font-size: 139%;
 }
@@ -69,7 +69,7 @@ body {
   border-bottom-left-radius: 3px 15px;
   border: solid 3px transparent;
   border-bottom: dashed 3px #ea95e0;
-  font-family: 'Gochi Hand', cursive;
+  font-family: "Gochi Hand", cursive;
   font-size: 1rem;
   color: rgba(63, 62, 65, 0.7);
   width: 70%;
@@ -91,13 +91,13 @@ body {
   transform: rotate(4deg);
   cursor: pointer;
   transform-origin: center;
-  font-family: 'Gochi Hand', cursive;
+  font-family: "Gochi Hand", cursive;
   text-decoration: none;
   padding-bottom: 3px;
   border-radius: 5px;
   box-shadow: 0 2px 0 #494a4b;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background-image: url('your_image_url_here');
+  background-image: url("your_image_url_here");
   background-color: rgba(0, 255, 196, 0.7);
 }
 
